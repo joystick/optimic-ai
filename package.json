@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-template",
+  "name": "optimic-ai",
   "version": "0.0.0",
   "workspaces": [
     "packages/*"
