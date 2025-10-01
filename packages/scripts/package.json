@@ -4,7 +4,7 @@
   "type": "module",
   "dependencies": {
     "@optimic-ai/core": "*",
-    "sst": "*"
+    "sst": "3.17.14"
   },
   "scripts": {
     "shell": "sst shell tsx"

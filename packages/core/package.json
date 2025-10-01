@@ -12,7 +12,7 @@
     ]
   },
   "dependencies": {
-    "sst": "*"
+    "sst": "3.17.14"
   },
   "devDependencies": {
     "vitest": "^2"

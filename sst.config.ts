@@ -11,6 +11,7 @@ export default $config({
   },
   async run() {
     const storage = await import("./infra/storage");
+    const web = await import("./infra/web");
     await import("./infra/api");
     return {
       MyBucket: storage.bucket.name,
