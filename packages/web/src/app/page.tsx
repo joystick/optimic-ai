@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "~/components/ui/button"
+import { Button } from "~/components/ui/button";
 
 export default function Home() {
   return (
@@ -27,9 +27,11 @@ export default function Home() {
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Button name="hello" className="w-full" variant="outline">Bla 😁</Button>
+          <Button name="hello" className="w-full" variant="outline">
+            Bla 😁
+          </Button>
           <Button name="foo" className="w-full">
-          Read our docs
+            Read our docs
           </Button>
         </div>
       </main>
