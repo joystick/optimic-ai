@@ -5,17 +5,14 @@ import {
   RespondToAuthChallengeCommand,
   AdminConfirmSignUpCommand,
 } from "@aws-sdk/client-cognito-identity-provider";
+import { Resource } from "sst/resource";
 
 const client = new CognitoIdentityProviderClient({
-  region: process.env.AWS_REGION!,
-  credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
-  },
+  region: "eu-central-1",
 });
 
-const CLIENT_ID = process.env.AWS_COGNITO_CLIENT_ID!;
-const USER_POOL_ID = process.env.AWS_COGNITO_USER_POOL_ID!;
+const CLIENT_ID = Resource.AuthClient.id;
+const USER_POOL_ID = Resource.UserPool.id;
 
 export async function initiateCustomAuth(email: string) {
   try {

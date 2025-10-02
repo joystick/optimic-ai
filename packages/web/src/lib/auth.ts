@@ -1,4 +1,4 @@
-import { NextAuthOptions } from "next-auth";
+import type { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { verifyOTP } from "./cognito";
 
@@ -46,10 +46,10 @@ export const authOptions: NextAuthOptions = {
       return token;
     },
     async session({ session, token }) {
-      session.user = {
-        ...session.user,
-        id: token.sub!,
-      };
+      // session.user = {
+      //   ...session.user,
+      //   id: token.sub!,
+      // };
       (session as any).accessToken = token.accessToken;
       (session as any).idToken = token.idToken;
       return session;

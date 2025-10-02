@@ -11,10 +11,14 @@ export default $config({
   },
   async run() {
     const storage = await import("./infra/storage");
-    const _web = await import("./infra/web");
+    const { userPool, userPoolClient } = await import("./infra/cognito");
     await import("./infra/api");
+    await import("./infra/web");
     return {
       MyBucket: storage.bucket.name,
+      UserPool: userPool.id,
+      Region: aws.getRegionOutput().region,
+      UserPoolClient: userPoolClient.id,
     };
   },
 });
