@@ -1,5 +1,17 @@
 # Monorepo Template
 
+## Development
+Use `NO_BUN` if needed.
+```bash
+AWS_PROFILE=alexei NO_BUN=true npx sst dev --stage alexei
+```
+
+## Development
+```bash
+AWS_PROFILE=alexei npx sst deploy --stage test
+```
+
+
 A template to create a monorepo SST v3 project. [Learn more](https://sst.dev/docs/set-up-a-monorepo).
 
 ## Get started
