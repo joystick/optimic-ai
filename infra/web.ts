@@ -1,5 +1,5 @@
-import { bucket } from "./storage";
 import { userPool, userPoolClient } from "./cognito";
+import { bucket } from "./storage";
 
 export const web = new sst.aws.Nextjs("MyWeb", {
   link: [bucket, userPool, userPoolClient],
