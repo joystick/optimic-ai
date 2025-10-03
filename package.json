@@ -6,10 +6,13 @@
   ],
   "scripts": {},
   "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
     "@tsconfig/node22": "^22",
     "typescript": "^5"
   },
   "dependencies": {
-    "sst": "3.17.14"
+    "open-next": "0.0.1",
+    "sst": "3.17.14",
+    "vitest": "3.2.4"
   }
 }

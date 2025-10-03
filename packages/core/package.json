@@ -12,9 +12,10 @@
     ]
   },
   "dependencies": {
+    "open-next": "0.0.1",
     "sst": "3.17.14"
   },
   "devDependencies": {
-    "vitest": "^2"
+    "vitest": "^3.2.4"
   }
 }
